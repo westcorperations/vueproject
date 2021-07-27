@@ -2,23 +2,25 @@ const App = {
     data() {
     return{
     brandName : ' ',
+    activeColor: 'text-white',
     links:[
-    { name:'Home', href:'index.html' , active: 'true'} ,
-    {name:'Blog'  ,  href:'#' , active: 'false'},
-    {name:'About'  ,  href:'#' , active: 'false'},
-    {name:'Contact' , href:'#' , active: 'false'},
+    { name:'Home', href:'#',isActive:true},
+    {name:'Blog',href:'#',isActive:false},
+    {name:'About',href:'#',isActive:false},
+    {name:'Contact',href:'#',isActive:false},
     
     
     ]
     
-    }
-    //methods:{
-  //  controllink: function (){
-   // this.
+    }}, 
     
-   // }
- // }
-    }
-
+methods: {
+    active(link) {
+     link.isActive = !link.isActive
+   
+     
+}
+}
+  
 }
  Vue.createApp(App).mount( '#navBar ' )
