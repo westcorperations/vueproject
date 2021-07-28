@@ -10,8 +10,14 @@ const App = {
     {name:'Contact',href:'#',isActive:false},
     
     
-    ]
-    
+    ],
+    ProductCard:[
+      {image:'product1.jpg',title:'Our classic senator design',priceRange:'$50-$100'},
+      {image:'product2.png',title:'classic Ankara designs',priceRange:'$50-$100'},
+       {image:'product3.jpg',title:'classic international wears',priceRange:'$100-$300'},
+        {image:'product1.jpg',title:'Fashion Training for aspirants',priceRange:'Affordable'},
+        
+        ]
     }}, 
     
 methods: {
@@ -23,4 +29,4 @@ methods: {
 }
   
 }
- Vue.createApp(App).mount( '#navBar ' )
+ Vue.createApp(App).mount( '#app ' )
